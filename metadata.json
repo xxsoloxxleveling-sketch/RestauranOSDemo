@@ -1,0 +1,6 @@
+{
+  "name": "Restaurant Management System",
+  "description": "Enterprise-grade utilitarian restaurant management system featuring Point of Sale (POS), Kitchen Display System (KDS), Inventory & Stock Management, Table & Floor Plan, and Keyboard-First Hotkey navigation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
