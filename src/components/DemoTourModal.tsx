@@ -10,10 +10,10 @@ export const DemoTourModal: React.FC = () => {
     return (
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-4 right-4 z-40 p-2.5 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 text-white shadow-lg hover:scale-105 transition-transform flex items-center gap-2 text-xs font-bold font-mono"
+        className="fixed bottom-4 right-4 z-40 p-2.5 rounded-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 shadow-lg hover:scale-105 transition-transform flex items-center gap-2 text-xs font-bold font-mono"
         title="Open Interactive Demo Tour"
       >
-        <Sparkles className="w-4 h-4 text-amber-300 animate-spin" />
+        <Sparkles className="w-4 h-4 text-slate-950" />
         <span>Demo Guide</span>
       </button>
     );
@@ -28,19 +28,19 @@ export const DemoTourModal: React.FC = () => {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/80 backdrop-blur-md p-4 font-sans select-none animate-fadeIn">
       <div className="bg-slate-900 border border-slate-700/80 rounded-2xl shadow-2xl w-full max-w-xl overflow-hidden flex flex-col glass-card relative">
-        {/* Glowing Ambient Top Bar */}
-        <div className="h-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-emerald-400"></div>
+        {/* Top Accent Line */}
+        <div className="h-1 bg-emerald-500"></div>
 
         {/* Modal Header */}
         <div className="p-6 pb-2 flex items-start justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 text-white flex items-center justify-center shadow-lg font-black text-lg">
+            <div className="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 text-emerald-400 flex items-center justify-center shadow-sm font-black text-lg">
               ⚡
             </div>
             <div>
               <div className="flex items-center gap-2">
                 <h2 className="font-heading text-xl font-extrabold text-white tracking-tight">Welcome to RestauranOSDemo</h2>
-                <span className="px-2 py-0.5 rounded-full text-[10px] font-mono font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/40">
+                <span className="px-2 py-0.5 rounded-full text-[10px] font-mono font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
                   HANDS-ON DEMO
                 </span>
               </div>
@@ -64,21 +64,21 @@ export const DemoTourModal: React.FC = () => {
           <div className="grid grid-cols-2 gap-3 font-mono text-xs">
             <button
               onClick={() => handleStartDemo('POS')}
-              className="p-3.5 rounded-xl bg-slate-950/80 hover:bg-indigo-950/40 border border-slate-800 hover:border-indigo-500/60 text-left transition-all group flex flex-col justify-between"
+              className="p-3.5 rounded-xl bg-slate-950/80 hover:bg-slate-800/80 border border-slate-800 hover:border-emerald-500/50 text-left transition-all group flex flex-col justify-between"
             >
               <div className="flex items-center justify-between mb-2">
-                <ShoppingCart className="w-5 h-5 text-indigo-400 group-hover:scale-110 transition-transform" />
+                <ShoppingCart className="w-5 h-5 text-emerald-400 group-hover:scale-110 transition-transform" />
                 <span className="text-[10px] text-slate-400">Alt+1</span>
               </div>
               <div>
-                <div className="font-bold text-slate-100 group-hover:text-indigo-300">Point of Sale (POS)</div>
+                <div className="font-bold text-slate-100 group-hover:text-emerald-300">Point of Sale (POS)</div>
                 <div className="text-[11px] text-slate-400 font-sans mt-0.5">Tap menu items, select seats, apply discounts & print thermal receipts.</div>
               </div>
             </button>
 
             <button
               onClick={() => handleStartDemo('KDS')}
-              className="p-3.5 rounded-xl bg-slate-950/80 hover:bg-amber-950/40 border border-slate-800 hover:border-amber-500/60 text-left transition-all group flex flex-col justify-between"
+              className="p-3.5 rounded-xl bg-slate-950/80 hover:bg-slate-800/80 border border-slate-800 hover:border-amber-500/50 text-left transition-all group flex flex-col justify-between"
             >
               <div className="flex items-center justify-between mb-2">
                 <ChefHat className="w-5 h-5 text-amber-400 group-hover:scale-110 transition-transform" />
@@ -92,7 +92,7 @@ export const DemoTourModal: React.FC = () => {
 
             <button
               onClick={() => handleStartDemo('FLOOR')}
-              className="p-3.5 rounded-xl bg-slate-950/80 hover:bg-emerald-950/40 border border-slate-800 hover:border-emerald-500/60 text-left transition-all group flex flex-col justify-between"
+              className="p-3.5 rounded-xl bg-slate-950/80 hover:bg-slate-800/80 border border-slate-800 hover:border-emerald-500/50 text-left transition-all group flex flex-col justify-between"
             >
               <div className="flex items-center justify-between mb-2">
                 <LayoutGrid className="w-5 h-5 text-emerald-400 group-hover:scale-110 transition-transform" />
@@ -106,7 +106,7 @@ export const DemoTourModal: React.FC = () => {
 
             <button
               onClick={() => handleStartDemo('INVENTORY')}
-              className="p-3.5 rounded-xl bg-slate-950/80 hover:bg-rose-950/40 border border-slate-800 hover:border-rose-500/60 text-left transition-all group flex flex-col justify-between"
+              className="p-3.5 rounded-xl bg-slate-950/80 hover:bg-slate-800/80 border border-slate-800 hover:border-rose-500/50 text-left transition-all group flex flex-col justify-between"
             >
               <div className="flex items-center justify-between mb-2">
                 <Boxes className="w-5 h-5 text-rose-400 group-hover:scale-110 transition-transform" />
@@ -123,15 +123,15 @@ export const DemoTourModal: React.FC = () => {
         {/* Modal Footer Controls */}
         <div className="p-4 bg-slate-950 border-t border-slate-800 flex items-center justify-between gap-3">
           <div className="flex items-center gap-2 font-mono text-xs text-slate-400">
-            <Zap className="w-4 h-4 text-indigo-400 animate-pulse" />
+            <Zap className="w-4 h-4 text-emerald-400" />
             <span>Auto Traffic: <span className={isSimulationActive ? 'text-emerald-400 font-bold' : 'text-slate-400'}>{isSimulationActive ? 'ACTIVE' : 'OFF'}</span></span>
           </div>
 
           <button
             onClick={() => handleStartDemo('POS')}
-            className="py-2.5 px-5 rounded-xl bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-400 hover:to-purple-500 text-white font-extrabold text-xs flex items-center gap-2 shadow-md transition-all hover:scale-102"
+            className="py-2.5 px-5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold text-xs flex items-center gap-2 shadow-sm transition-colors"
           >
-            <Play className="w-4 h-4 fill-white" />
+            <Play className="w-4 h-4 fill-slate-950" />
             <span>Start Exploring Demo</span>
           </button>
         </div>

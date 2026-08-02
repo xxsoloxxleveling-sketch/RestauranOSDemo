@@ -133,24 +133,24 @@ export const Header: React.FC = () => {
         {/* Live Traffic Simulation Toggle */}
         <button
           onClick={() => toggleSimulation()}
-          className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded text-xs font-semibold transition-all border ${
+          className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded text-xs font-semibold transition-colors border ${
             isSimulationActive
-              ? 'bg-indigo-600/30 text-indigo-300 border-indigo-500/50 shadow-[0_0_12px_rgba(99,102,241,0.3)]'
+              ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40 font-bold'
               : 'bg-slate-800 text-slate-400 border-slate-700 hover:text-slate-200'
           }`}
           title="Toggle Auto Traffic Simulation"
         >
-          <Zap className={`w-3.5 h-3.5 ${isSimulationActive ? 'text-indigo-400 animate-pulse' : 'text-slate-500'}`} />
+          <Zap className={`w-3.5 h-3.5 ${isSimulationActive ? 'text-emerald-400 font-bold' : 'text-slate-500'}`} />
           <span className="hidden md:inline">{isSimulationActive ? 'Traffic: ON' : 'Traffic: OFF'}</span>
         </button>
 
         {/* Trigger Single Simulated Order Button */}
         <button
           onClick={() => simulateRandomOrder()}
-          className="p-1.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-indigo-300 border border-slate-700 transition-colors"
+          className="p-1.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-emerald-300 border border-slate-700 transition-colors"
           title="Simulate Single Incoming Order"
         >
-          <PlusCircle className="w-4 h-4 text-indigo-400" />
+          <PlusCircle className="w-4 h-4 text-emerald-400" />
         </button>
 
         {/* Hotkeys Button */}
